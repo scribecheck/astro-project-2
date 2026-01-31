@@ -1,0 +1,48 @@
+:root {
+  --borders: #FFF;
+  --links: #fff700;
+  --text: #96d7ff;
+  --headers: #00ffd0;
+}
+
+
+html {
+  background-color: #161b20;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 80ch;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+  color: var(--headers);
+}
+
+p {
+  color: var(--text);
+}
+
+ul {
+  color: #f4f4f4;
+  list-style-type: none;
+}
+
+a {
+  color: var(--links);
+}
+
+hr {
+  height: 2px;
+  color: #FFF;
+}

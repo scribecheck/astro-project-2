@@ -1,0 +1,15 @@
+Bookmark
+1/29/2026
+https://docs.astro.build/en/tutorial/3-components/1/
+
+References
+https://www.markdownguide.org/cheat-sheet/
+https://docs.astro.build/en/guides/styling/#css-variables
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Tools_and_setup/What_are_browser_developer_tools
+https://assemble.io/docs/YAML-front-matter.html
+https://docs.astro.build/en/basics/astro-components/
+https://refactoring.com/
+https://docs.astro.build/en/basics/astro-components/#component-props
+
+Resources
+https://www.w3schools.com/css/default.asp
