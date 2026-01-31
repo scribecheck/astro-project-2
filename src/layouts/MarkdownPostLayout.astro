@@ -1,0 +1,26 @@
+---
+const { frontmatter } = Astro.props;
+
+---
+<meta charset="utf-8" />
+
+<body>
+  <h1>{frontmatter.title}</h1>
+<p class="header">Written by {frontmatter.author}</p>
+<p class="header">Published on {frontmatter.pubDate.toString().slice(0,10)}</p>
+<br>
+<style>
+
+    h1,
+    .header {
+        text-align: center;
+        color: var(--headers);
+    }
+
+    body {
+        background-color: antiquewhite;
+    }
+
+</style>
+<slot />  
+</body>

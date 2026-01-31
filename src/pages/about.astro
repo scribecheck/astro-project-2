@@ -1,7 +1,5 @@
 ---
-import Navigation from '../components/navigation.astro';
-import Footer from '../components/footer.astro';
-
+import BaseLayout from '../layouts/baselayout.astro';
 import '../styles/global.css';
 
 const pageTitle = "About";
@@ -20,21 +18,8 @@ const goal = 3;
 
 ---
 
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-
-	</head>
-	<body>
-        <Navigation />
-		<h1>{pageTitle}</h1>
-
-<p>Hi, my name is {identity.firstName}.</p>
+<BaseLayout pageTitle={pageTitle}>
+	<p>Hi, my name is {identity.firstName}.</p>
 <ul>
   <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
   {identity.hobbies.length >= 2 &&
@@ -51,7 +36,4 @@ const goal = 3;
 {finished && <p>I finished this tutorial!</p>}
 
 {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}</p>
-<hr>
- <Footer />
-	</body>
-</html>
+</BaseLayout>
