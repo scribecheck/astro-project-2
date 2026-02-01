@@ -1,26 +1,24 @@
 ---
+import BaseLayout from './baselayout.astro';
 const { frontmatter } = Astro.props;
 
 ---
-<meta charset="utf-8" />
+<BaseLayout pageTitle={frontmatter.title}>
+
 
 <body>
-  <h1>{frontmatter.title}</h1>
-<p class="header">Written by {frontmatter.author}</p>
-<p class="header">Published on {frontmatter.pubDate.toString().slice(0,10)}</p>
+
+<p class="blog-header">Written by {frontmatter.author}</p>
+<p class="blog-header">Published on {frontmatter.pubDate.toString().slice(0,10)}</p>
 <br>
-<style>
 
-    h1,
-    .header {
-        text-align: center;
-        color: var(--headers);
-    }
-
-    body {
-        background-color: antiquewhite;
-    }
-
-</style>
 <slot />  
 </body>
+
+<style>
+    .blog-header {
+        text-align: center;
+        margin: auto;
+    }
+</style>
+</BaseLayout>

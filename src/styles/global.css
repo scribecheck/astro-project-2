@@ -1,6 +1,6 @@
 :root {
   --borders: #FFF;
-  --links: #fff700;
+  --links: #ffd000;
   --text: #96d7ff;
   --headers: #00ffd0;
   --background: #161b20;
@@ -32,6 +32,13 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: var(--headers);
+  text-align: center;
+}
+
 p {
   color: var(--text);
 }
@@ -44,6 +51,7 @@ ul {
 
 a {
   color: var(--links);
+  text-decoration: none;
 }
 
 
@@ -51,6 +59,7 @@ hr {
   height: 2px;
   color: #FFF;
 }
+
 
 /* nav styles */
 
