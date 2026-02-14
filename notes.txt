@@ -13,7 +13,11 @@ https://docs.astro.build/en/basics/astro-components/#component-props
 https://dev.to/paulasantamaria/introduction-to-yaml-125f
 https://docs.astro.build/en/basics/layouts/#markdown-layout-props
 https://docs.astro.build/en/guides/markdown-content/#frontmatter-layout-property
+https://docs.astro.build/en/guides/routing/#dynamic-routes
+https://docs.astro.build/en/reference/routing-reference/#getstaticpaths
 
 
 Resources
 https://www.w3schools.com/css/default.asp
+https://coolors.co/palettes
+

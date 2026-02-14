@@ -1,10 +1,11 @@
 :root {
-  --borders: #FFF;
-  --links: #ffd000;
+  --borders: #fafaff;
+  --links: #af8fff;
   --text: #96d7ff;
   --headers: #00ffd0;
-  --background: #161b20;
-  --menu-bg: #008062;
+  --background: #13192c;
+  --menu-bg: #05888d;
+  --buttons: #1d4b95;
 }
 
 
@@ -60,6 +61,20 @@ hr {
   color: #FFF;
 }
 
+/* socials */
+
+  .socials {
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: var(--buttons);
+    text-decoration: none;
+  }
+
+   .socials:hover {
+    color: var(--buttons);
+    background-color: white;
+    transition: 0.3s;
+  }
 
 /* nav styles */
 
@@ -75,16 +90,18 @@ hr {
 .nav-links {
   width: 100%;
   display: none;
-  margin: 1rem;
+  margin: 1rem auto;
 }
 
 .nav-links a {
   display: block;
   text-align: center;
-  padding: 10px 0;
+  padding: 0.5rem 1rem;
   text-decoration: none;
   font-size: 1.2rem;
   text-transform: uppercase;
+  color: white;
+  background-color: var(--menu-bg);
 }
 
 .nav-links a:hover,
