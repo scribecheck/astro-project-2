@@ -15,7 +15,11 @@ https://docs.astro.build/en/basics/layouts/#markdown-layout-props
 https://docs.astro.build/en/guides/markdown-content/#frontmatter-layout-property
 https://docs.astro.build/en/guides/routing/#dynamic-routes
 https://docs.astro.build/en/reference/routing-reference/#getstaticpaths
-
+https://docs.astro.build/en/guides/routing/#static-routes
+https://docs.astro.build/en/recipes/rss/#using-glob-imports
+https://docs.astro.build/en/guides/integrations-guide/
+https://docs.astro.build/en/guides/framework-components/#using-framework-components
+https://docs.astro.build/en/reference/directives-reference/#client-directives
 
 Resources
 https://www.w3schools.com/css/default.asp

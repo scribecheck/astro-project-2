@@ -6,7 +6,36 @@ const tags = [...new Set(allPosts.map((post: any) => post.frontmatter.tags).flat
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <div>{tags.map((tag) => 
-  <p>{tag}</p>)}
-</div>
+  <div class="tags">
+    {tags.map((tag) => (
+      <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
+    ))}
+  </div>
+
+  <style>
+  a {
+    color: var(--links);
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+ 
+  .tag {
+    margin: 0.25em;
+    border: solid 1px rgba(255, 255, 255, 0.521);
+    border-radius: .5em;
+    padding: .5em 1em;
+    font-size: 1em;
+    background-color: var(--background);
+  }
+
+   .tag:hover {
+    color: #008062;
+    background-color: white;
+    transition: 0.3s;
+  }
+</style>
 </BaseLayout>
